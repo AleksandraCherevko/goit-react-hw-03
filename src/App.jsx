@@ -1,5 +1,9 @@
 import ContactForm from "./components/ContactForm/ContactForm";
-import FormFeald from "./components/FormField/FormField";
+
+import ContactList from "./components/ContactList/ContactList";
+import Contact from "./components/Contact/Contact";
+import contacts from "./components/ContactList/contacts.json";
+import { Field, Form, Formik } from "formik";
 
 function App() {
   const submit = (data) => {
@@ -11,6 +15,7 @@ function App() {
       <h1>Phonebook</h1>
 
       <ContactForm submit={submit} />
+      <ContactList contacts={contacts} />
     </>
   );
 }

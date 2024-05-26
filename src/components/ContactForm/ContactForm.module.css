@@ -1,0 +1,38 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px; /* Расстояние между полями */
+}
+
+.field label {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px; /* Размер текста */
+}
+
+.field input {
+  margin-top: 5px; /* Расстояние между текстом и полем ввода */
+  padding: 8px; /* Внутренние отступы для удобства ввода */
+  font-size: 14px; /* Размер текста внутри поля ввода */
+  border: 1px solid #ccc; /* Цвет и стиль границы */
+  border-radius: 4px; /* Скругленные углы */
+}
+
+.form {
+  margin-top: 50px;
+  width: 300px;
+}
+
+.formBtn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 25px;
+  padding-left: 25px;
+  border-radius: 30px;
+}
+
+.formBtn:hover,
+.formBtn:focus {
+  background-color: black;
+  color: white;
+}

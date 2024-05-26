@@ -1,17 +1,16 @@
+import ContactForm from "./components/ContactForm/ContactForm";
+import FormFeald from "./components/FormField/FormField";
+
 function App() {
-  // метод, який опрац. метод сабміта
-  // function submit(data) {
-  //   const newData = {
-  //     ...data,
-  //     role: "guest",
-  //   };
-  //   console.log(newData);
+  const submit = (data) => {
+    console.log(data);
+  };
 
   return (
     <>
       <h1>Phonebook</h1>
 
-      {/* <ControlForm /> */}
+      <ContactForm submit={submit} />
     </>
   );
 }

@@ -36,3 +36,15 @@
   background-color: black;
   color: white;
 }
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 1px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}

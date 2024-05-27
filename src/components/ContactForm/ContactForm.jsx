@@ -26,15 +26,23 @@ const ContactForm = ({ onAdd }) => {
     >
       {({ errors, touched }) => (
         <Form className={css.form}>
-          <div>
-            <label htmlFor="name">Name</label>
-            <Field className={css.field} type="text" name="name" />
-            {errors.name && touched.name && <div>{errors.name}</div>}
+          <div className={css.field}>
+            <label htmlFor="name">
+              Name
+              <Field className={css.field} type="text" name="name" />
+              {errors.name && touched.name && (
+                <div className={css.error}>{errors.name}</div>
+              )}
+            </label>
           </div>
-          <div>
-            <label htmlFor="number">Number</label>
-            <Field className={css.field} type="text" name="number" />
-            {errors.number && touched.number && <div>{errors.number}</div>}
+          <div className={css.field}>
+            <label htmlFor="number">
+              Number
+              <Field className={css.field} type="text" name="number" />
+              {errors.number && touched.number && (
+                <div className={css.error}>{errors.number}</div>
+              )}
+            </label>
           </div>
           <button className={css.formBtn} type="submit">
             Add contact

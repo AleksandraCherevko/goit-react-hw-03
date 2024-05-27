@@ -1,0 +1,9 @@
+.searchBox {
+  margin-top: 20px;
+}
+
+.searchBoxInput {
+  border: 1px solid black;
+  width: 300px;
+  padding: 15px;
+}

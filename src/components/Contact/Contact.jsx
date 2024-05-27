@@ -1,16 +1,16 @@
 import css from "./Contact.module.css";
 
-const Contact = ({ name, number }) => {
+const Contact = ({ data: { id, name, number }, onDelete }) => {
   return (
-    <>
-      <div className={css.contactsCard}>
-        <div className={css.contactsCardWrap}>
-          <p className={css.contactsName}>{name}</p>
-          <p>{number}</p>
-        </div>
-        <button className={css.contactsBtn}>Delete</button>
+    <div className={css.contactsCard}>
+      <div className={css.contactsCardWrap}>
+        <p className={css.contactsName}>{name}</p>
+        <p>{number}</p>
       </div>
-    </>
+      <button className={css.contactsBtn} onClick={onDelete}>
+        Delete
+      </button>
+    </div>
   );
 };
 

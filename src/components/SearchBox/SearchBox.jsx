@@ -1,6 +1,12 @@
-// import { Field, Form, Formik } from "formik";
-// import css from "../ContactForm/ContactForm.module.css";
+const SearchBox = ({ value, onChange }) => {
+  return (
+    <input
+      type="text"
+      placeholder="Search contacts..."
+      value={value}
+      onChange={(e) => onChange(e.target.value)}
+    />
+  );
+};
 
-// const SearchBox = ({ submit }) => {
-//     return ()
-// };
+export default SearchBox;

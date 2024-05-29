@@ -12,7 +12,10 @@ const initialContacts = [
 ];
 
 function App() {
-  const [contacts, setContacts] = useState(initialContacts);
+  const [contacts, setContacts] = useState(() => {
+    const savedContacts = localStorage.getItem("contacts");
+    return savedContacts ? JSON.parse(savedContacts) : initialContacts;
+  });
   const [filter, setFilter] = useState("");
 
   const addContact = (newContact) => {
